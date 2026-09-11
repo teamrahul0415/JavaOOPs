@@ -6,8 +6,7 @@ class Book {
         private String author;
         private double price;
         private String isbn;
-
-        // Static variable for book upadate
+        
         //static variable are just ONCE intilize and upadted everytime....
         static int bookCount = 0;
 

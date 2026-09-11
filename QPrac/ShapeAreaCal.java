@@ -15,7 +15,6 @@ class Circle extends Shape {
 
     double radius;
 
-    // now we make const..
     Circle(double radius) {
         this.radius = radius;
     }
@@ -33,7 +32,6 @@ class Rectangle extends Shape {
     double length;
     double width;
 
-    // Constructor
     Rectangle(double length, double width) {
         this.length = length;
         this.width = width;
@@ -58,7 +56,6 @@ public class ShapeAreaCal {
         // Rectangle ka object using parent as reference ....
         shapes[1] = new Rectangle(4.0, 6.0);
 
-        // Loop
         for (Shape s : shapes) {
 
             s.displayArea();
