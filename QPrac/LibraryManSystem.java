@@ -10,6 +10,7 @@ public class LibraryManSystem {
         private String isbn;
 
         // Static variable for book upadate
+        //static variable are just ONCE intilize and upadted everytime....
         static int bookCount = 0;
 
         // Final qki libraryname change nhi hogaa.
@@ -26,42 +27,34 @@ public class LibraryManSystem {
             bookCount++;
         }
 
-        // Getter for title
         public String getTitle() {
             return title;
         }
 
-        // Setter for title
         public void setTitle(String title) {
             this.title = title;
         }
 
-        // Getter for author
         public String getAuthor() {
             return author;
         }
 
-        // Setter for author
         public void setAuthor(String author) {
             this.author = author;
         }
 
-        // Getter for price
         public double getPrice() {
             return price;
         }
 
-        // Setter for price
         public void setPrice(double price) {
             this.price = price;
         }
 
-        // Getter for isbn
         public String getIsbn() {
             return isbn;
         }
 
-        // Setter for isbn
         public void setIsbn(String isbn) {
             this.isbn = isbn;
         }
