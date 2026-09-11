@@ -1,8 +1,6 @@
-package QPrac;
+//package QPrac;
 
-public class LibraryManSystem {
-
-    static class Book {
+class Book {
 
         private String title;
         private String author;
@@ -72,5 +70,5 @@ public class LibraryManSystem {
     }
 }
 
-}
+
 

@@ -1,4 +1,4 @@
-package QPrac;
+//package QPrac;
 
      // Define the Person class
 class Person {
