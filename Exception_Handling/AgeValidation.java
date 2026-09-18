@@ -12,12 +12,15 @@ public class AgeValidation {
             ageCheck(age);
         }
         catch(InvalidAgeException e){
-            System.out.println();
+            System.out.println("Invalid age");
+        }
+        finally{
+            System.out.println("It alwayes executed");
         }
     }
-    static void ageCheck(int a){
+    static void ageCheck(int a) throws InvalidAgeException{
         if(a<18) throw new InvalidAgeException("Age is Invalid");
-        System.out.println("Elogible to vote");
+        System.out.println("Eligible to vote");
     }
     
 }

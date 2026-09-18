@@ -49,8 +49,3 @@ public class ATMTest {
         }
     }
 }
-class InsufficientBalanceException extends Exception{
-    InsufficientBalanceException(String msg){
-        super(msg);
-    }
-}
