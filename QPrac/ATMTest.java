@@ -11,7 +11,7 @@ public class ATMTest {
     public static void main(String[] args) {
 
         double balance = 5000.0;
-        double withdrawAmount = 7500.0;
+        double withdrawAmount = 500.0;
 
         try {
 
@@ -36,7 +36,7 @@ public class ATMTest {
         if (amount > balance) {
 
             throw new InsufficientBalanceException(
-                "Insufficient balance."
+                "Insufficient balance..."
             );
 
         }

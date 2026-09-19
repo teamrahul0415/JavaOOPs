@@ -5,13 +5,13 @@ import java.util.*;
 public class ShoppingCart {
 
     public static void addProduct(List<String> cart, String product) {
-        cart.add(product);
         // Write your code
+        cart.add(product);
     }
 
     public static void removeProduct(List<String> cart, String product) {
-        cart.remove(product);
         // Write your code
+        cart.remove(product);
     }
 
     public static int countProduct(List<String> cart, String product) {

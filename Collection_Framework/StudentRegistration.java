@@ -5,18 +5,29 @@ public class StudentRegistration {
 
     public static boolean registerStudent(Set<Integer> ids, int id) {
         // Write your code
+        // if(ids.contains(id)){
+        //     return false;
+        // }
         
-        return false;
+        // return true;
+        return ids.add(id);
     }
 
     public static boolean isRegistered(Set<Integer> ids, int id) {
         // Write your code
+        if(ids.contains(id)){
+            return true;
+        }
         return false;
     }
 
     public static int totalStudents(Set<Integer> ids) {
         // Write your code
-        return 0;
+        int count=0;
+        for(int val : ids){
+            count++;
+        }
+        return count;
     }
 
     public static void main(String[] args) {
