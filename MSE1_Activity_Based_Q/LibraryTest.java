@@ -1,4 +1,4 @@
-//package QPrac;
+ package MSE1_Activity_Based_Q;
 
 class Book {
 
@@ -61,11 +61,12 @@ class Book {
     public static void main(String[] args) {
         Book b1 = new Book("Java Basics", "J. Author", 350.0, "ISBN001");
         Book b2 = new Book("OOP Concepts", "K. Writer", 420.0, "ISBN002");
+        // Book b3 = new Book("CFW Concepts", "Ishika", 345, "ISBN003");
 
 
         // setter and getter update thee value after the object creation..
         b1.setAuthor("Rahul");
-        b2.setPrice(300);
+        b2.setPrice(300.50);
  
         System.out.println(b1.getTitle() + " by " + b1.getAuthor());
         System.out.println("Price: " + b2.getPrice());
