@@ -1,11 +1,15 @@
 package com.example.FirstSpringProject;
 
+import org.slf4j.*;
+
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 @Component 
 public class HelloWorld {
+public static final Logger logger = LoggerFactory.getLogger(HelloWorld.class); 
     
     public void display(){
-        System.out.println("Hello World!");
+        logger.info("Hello World!");
     }
 }
