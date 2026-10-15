@@ -57,6 +57,33 @@ public class StudentController {
       
     }
 
+    @GetMapping("/search")
+    public List<Student> searchStudents(@RequestParam String branch,@RequestParam int year) {
+
+        List<Student> result=new ArrayList<>();
+
+        for(Student s : users){
+            if(s.getBranch().equalsIgnoreCase(branch) && s.getYear()==year){
+                result.add(s);
+            }
+        }
+        return result;
+    }
+
+    @GetMapping("/search")
+    public List<Student> getToppers(@RequestParam double cgpa) {
+
+        List<Student> result=new ArrayList<>();
+
+        for(Student s : users){
+            if(s.getCgpa()>=cgpa){
+                result.add(s);
+            }
+        }
+        return result;
+    }
+
+
     
     
     

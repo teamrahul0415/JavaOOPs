@@ -4,15 +4,22 @@ public class Student {
     private Long id;
     private String name;
     private String email;
+    private String branch;
+    private int year;
+    private double cgpa;
+
 
     public Student(){
 
     }
 
-    public Student(Long id,String name, String email){
+    public Student(Long id,String name, String email,String branch,int year,double cgpa){
         this.id=id;
         this.name=name;
         this.email=email;
+        this.branch=branch;
+        this.year=year;
+        this.cgpa=cgpa;
     }
 
     public void setId(Long id){
@@ -34,6 +41,24 @@ public class Student {
     }
     public String getEmail(){
         return email;
+    }
+    public void setBranch(String branch){
+        this.branch=branch;
+    }
+    public String getBranch(){
+        return branch;
+    }
+    public void setYear(int year){
+        this.year=year;
+    }
+    public int getYear(){
+        return year;
+    }
+    public void setCgpa(double cgpa){
+        this.cgpa=cgpa;
+    }
+    public double getCgpa(){
+        return cgpa;
     }
     
 }
