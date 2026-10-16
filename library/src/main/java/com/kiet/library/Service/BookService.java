@@ -20,22 +20,22 @@ public class BookService {
 
     private final List<Book> books = new ArrayList<>();
 
-    public BookService() {
-        books.add(new Book(201, "Effective Java",
-                "Joshua Bloch", "Programming", 2018, true));
+    // public BookService() {
+    //     books.add(new Book(201, "Effective Java",
+    //             "Joshua Bloch", "Programming", 2018, true));
 
-        books.add(new Book(202, "Clean Code",
-                "Robert C. Martin", "Programming", 2008, true));
+    //     books.add(new Book(202, "Clean Code",
+    //             "Robert C. Martin", "Programming", 2008, true));
 
-        books.add(new Book(203, "The Alchemist",
-                "Paulo Coelho", "Fiction", 1988, false));
+    //     books.add(new Book(203, "The Alchemist",
+    //             "Paulo Coelho", "Fiction", 1988, false));
 
-        books.add(new Book(204, "Wings of Fire",
-                "A. P. J. Abdul Kalam", "Biography", 1999, true));
+    //     books.add(new Book(204, "Wings of Fire",
+    //             "A. P. J. Abdul Kalam", "Biography", 1999, true));
 
-        books.add(new Book(205, "Head First Java",
-                "Kathy Sierra", "Programming", 2022, true));
-    }
+    //     books.add(new Book(205, "Head First Java",
+    //             "Kathy Sierra", "Programming", 2022, true));
+    // }
 
 
     public List<Book> getAllBooks() {
