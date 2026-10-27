@@ -19,6 +19,10 @@ public Book(int bookid, String title, String author,
     this.available = available;
 }
 
+public Book(){
+    
+}
+
     public int getBookid() {
         return bookid;
     }
