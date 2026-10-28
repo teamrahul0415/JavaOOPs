@@ -11,13 +11,16 @@ package com.kiet.library.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.kiet.library.Model.Book;
+import com.kiet.library.Repository.BookRepository;
 
 @Service
 public class BookService {
-
+@Autowired 
+BookRepository br;
     private final List<Book> books = new ArrayList<>();
 
     // public BookService() {
@@ -39,7 +42,7 @@ public class BookService {
 
 
     public List<Book> getAllBooks() {
-        return books;
+        return br.findAll();
     }
 
     
